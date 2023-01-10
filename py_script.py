@@ -28,7 +28,7 @@ payload = {
 headers = {
     "accept": "application/json",
     "content-type": "application/json",
-    "authorization": "Basic cHViX3FpY25wZWFibnlrbHJ5YWhoaDpwa18zYTkzZTIxNC00NmQwLTRkODQtYmRjNS0yMGNhNDMxZWQ5Mjk="
+    "authorization": "Basic cHViXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" # this is just the encoded version of your Uberduck API credentials. You can have it directly on the Uberduck website
 }
 
 response = requests.post(url, json=payload, headers=headers)
