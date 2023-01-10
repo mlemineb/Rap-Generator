@@ -10,7 +10,7 @@ Next, the script calls the `generate_song()` function with "Kendrick Lamar" and 
 
 The script then uses the `requests` library to call the Uberduck TTS service endpoint, passing in the generatedsong,  the singer name and various headers required for the call. The script extracts the `uuid` value from the response, which is a unique identifier for the speech synthesis request and uses it to construct the URL for the `speak-status` endpoint.
 
-Finally, the script uses `requests.get(status_url)` to get the status of the speech synthesis request from the `speak-status` endpoint and prints out the response.
+Finally, the script uses `requests.get(status_url)` to get the status of the speech synthesis request from the `speak-status` endpoint and prints out the response.The final output can be accessed  trought the url that contains an 'audio.wav' file.
 
 ## Requirements
 
