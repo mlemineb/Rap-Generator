@@ -7,7 +7,9 @@ This script uses the OpenAI API to generate a song in the style of a given rappe
 
 ## How it works
 
-The full script is in the file 'py_script' and it's written in 'Python. Note that the R version of the script ('R_script') contain a small error that will be fixed soon.
+There are two version of the script allowing to do the full task :  a python version in the file `py_script.py` and a R version in the file `R_script.R`. Note that the R version contain a small error that will be fixed soon.
+
+This README file describe the `Python` version of the script.
 
 The script starts by importing the `openai` library and setting the API key for the OpenAI API. Next, it defines a function called `generate_song()` that takes in two arguments: a `rapper` and a `topic`. This function generates the song using the OpenAI API, it calls the `openai.Completion.create()` method, passing in various parameters such as the prompt, max_tokens, number of text completions, etc. The generatedsong is then returned and is then passed to TTS service.
 
