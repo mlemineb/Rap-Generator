@@ -2,6 +2,9 @@
 
 This script uses the OpenAI API to generate a song in the style of a given rapper, based on a given topic, and then uses the Uberduck AI TTS service to convert it into a speech and play it.
 
+![Alt text](www/workflow.png?raw=true "Title")
+
+
 ## How it works
 
 The script starts by importing the `openai` library and setting the API key for the OpenAI API. Next, it defines a function called `generate_song()` that takes in two arguments: a `rapper` and a `topic`. This function generates the song using the OpenAI API, it calls the `openai.Completion.create()` method, passing in various parameters such as the prompt, max_tokens, number of text completions, etc. The generatedsong is then returned and is then passed to TTS service.
